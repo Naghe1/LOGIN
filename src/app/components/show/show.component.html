@@ -1,0 +1,153 @@
+<!-- <h2 class="text-center">Componente SHOW</h2> -->
+<div class="col-md-3 text-end">
+  <button type="button" class="btn btn-outline-primary me-2" (click)="logOut()">LogOut</button>   
+</div>
+<div class="d-grid gap-2 mt-4">
+    <a routerLink="/create" class="btn btn-primary" type="button">Create</a>    
+</div>
+
+<table class="table table-hover table-striped">
+    <thead class="bg-gradient text-white">
+      <tr>        
+        <th>Title</th>
+        <th>Content</th>
+        <th>Author</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of Posts">        
+        <td>{{ post.title }}</td>
+        <td>{{ post.content }}</td>
+        <td>{{ post.author }}</td>
+        <td>          
+          <button routerLink="/edit/{{post.id}}" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+          <button (click)="deleteRecord(post)" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table> 
+
+
+  <div class="cuadrado">---OBSERVAR LOS LABORATORIOS---</div>
+  <style>
+  .cuadrado{
+  padding:12px;
+  margin:12px;
+  background-color: #1f4037;
+  border: solid 1px rgb(105, 3, 3);
+  color: white;
+  }
+  </style>
+
+  <main> 
+    <section id="about">
+      <pre> 
+          <code> 
+             <img class ="xdd" src = "../../../assets/img/img1.png" >  
+    </code> 
+    </pre> 
+  </section> 
+</main>
+
+<main> 
+  <section id="about"> 
+    
+    <pre> 
+        <code> 
+           <img class ="xdd" src = "../../../assets/img/img2.png" >  
+  </code> 
+  </pre> 
+</section> 
+</main>
+
+<main> 
+<section id="about"> 
+     <pre> 
+      <code> 
+         <img class ="xdd" src = "../../../assets/img/img3.png" >  
+</code> 
+</pre> 
+</section> 
+</main>
+
+<main> 
+<section id="about"> 
+   <pre> 
+    <code> 
+       <img class ="xdd" src = "../../../assets/img/img4.png" >  
+</code> 
+</pre> 
+</section> 
+</main>
+
+<main> 
+<section id="about">
+<pre> 
+  <code> 
+     <img class ="xdd" src = "../../../assets/img/img5.png" >  
+</code> 
+</pre> 
+</section> 
+</main>
+
+<main> 
+<section id="about">
+<pre> 
+  <code> 
+     <img class ="xdd" src = "../../../assets/img/img6.png" >  
+</code> 
+</pre> 
+</section> 
+</main>
+
+<main> 
+<section id="about">
+<pre> 
+  <code> 
+     <img class ="xdd" src = "../../../assets/img/img7.png" >  
+</code> 
+</pre> 
+</section> 
+</main>
+
+<main> 
+<section id="about">
+<pre> 
+  <code> 
+     <img class ="xdd" src = "../../../assets/img/img8.png" >  
+</code> 
+</pre> 
+</section> 
+</main>
+
+<main> 
+<section id="about">
+<pre> 
+  <code> 
+     <img class ="xdd" src = "../../../assets/img/img9.png" >  
+</code> 
+</pre> 
+</section> 
+</main>
+
+<main> 
+<section id="about">
+<pre> 
+  <code> 
+     <img class ="xdd" src = "../../../assets/img/img10.png" >  
+</code> 
+</pre> 
+</section> 
+</main>
+
+<main> 
+<section id="about">
+<pre> 
+  <code> 
+     <img class ="xdd" src = "../../../assets/img/img11.png" >  
+</code> 
+</pre> 
+</section> 
+</main>
+  
